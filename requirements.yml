@@ -1,0 +1,13 @@
+---
+  - name: git
+    src: https://github.com/awinterstein/ansible-role-git.git
+    scm: git
+  - name: qt-dev
+    src: https://github.com/awinterstein/ansible-role-qt-dev.git
+    scm: git
+  - name: kde-common
+    src: https://github.com/awinterstein/ansible-role-kde-common.git
+    scm: git
+  - name: dev-helpers
+    src: https://github.com/awinterstein/ansible-role-dev-helpers.git
+    scm: git

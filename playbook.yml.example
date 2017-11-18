@@ -1,0 +1,11 @@
+---
+- hosts: all
+  roles:
+    - kde-common
+    - qt-dev
+  vars:
+    homedir: "/home/vagrant/"
+    toolsdir: "{{homedir}}/tools/"
+    username: "SET_USERNAME_HERE"
+    usermail: "SET_EMAIL_HERE"
+    use_android: true
