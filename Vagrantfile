@@ -15,7 +15,8 @@ Vagrant.configure(2) do |config|
 
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
-  config.vm.box = "cerritus/kde-neon-lts"
+  config.vm.box = "cerritus/kubuntu-lts"
+  config.vm.box_version = "1.1.0"
 
   config.vm.synced_folder "src/", "/home/vagrant/src/",
     owner: "vagrant", group: "vagrant"
