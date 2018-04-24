@@ -1,2 +1,4 @@
 .vagrant
 roles
+playbook.yml
+playbook.retry
