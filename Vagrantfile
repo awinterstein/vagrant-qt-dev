@@ -40,8 +40,13 @@ Vagrant.configure(2) do |config|
   # View the documentation for the provider you are using for more
   # information on available options.
 
-  # Run Ansible from the Vagrant Host
-  config.vm.provision "ansible" do |ansible|
+  # Run Ansible to install Git into the VM (for using Ansible Galaxy later on)
+  config.vm.provision "ansible_local" do |ansible|
+    ansible.playbook = "bootstrap.yml"
+  end
+
+  # Run Ansible from wthin the Vagrant VM
+  config.vm.provision "ansible_local" do |ansible|
     ansible.playbook = "playbook.yml"
     ansible.galaxy_role_file = "requirements.yml"
   end

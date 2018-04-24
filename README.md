@@ -6,7 +6,6 @@ This repository contains a Vagrant file and an Ansible playbook for creating a v
 ## Requirements
 
 * Vagrant >= v1.8
-* Ansible >= v2.4
 * Virtualbox >= v5
 
 ## Usage
