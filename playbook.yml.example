@@ -6,6 +6,10 @@
   vars:
     homedir: "/home/vagrant/"
     toolsdir: "{{homedir}}/tools/"
+    desktop_environment: "KDE"
+    git_install_gui: true
+    git_install_git_cola: true
     username: "SET_USERNAME_HERE"
     usermail: "SET_EMAIL_HERE"
     use_android: true
+    use_raspi: false
